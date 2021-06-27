@@ -1,25 +1,15 @@
-
+import React from 'react';
 import './App.css';
+import Login from './Login'
+import {withAuthenticator, AmplifySignOut} from '@aws-amplify/ui-react'
 
 function App() {
   return (
     <div className="App">
-      <div className="title">
-        <span className="blueLetter">l</span>
-        <span className="greenLetter">d</span>
-        <span className="yellowLetter">r</span>
-        <span className="orangeLetter">x</span>
-        <span className="redLetter">j</span>
-        <span className="greyLetter">r</span>
-        <span className="thistleLetter">v</span>
-        <span className="pinkLetter">p</span>
-      </div>
-      <form className="login">
-        <input type="text" placeholder="email" name="email"/><br/>
-        <input type="password" placeholder="password" name="password"/>
-      </form>
+      <AmplifySignOut/>
+      <Login/>
     </div>
   );
 }
 
-export default App;
+export default withAuthenticator(App);

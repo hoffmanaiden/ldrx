@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "ldrxfc4a3b98": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
