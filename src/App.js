@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <AmplifySignOut/>
-      <Login/>
+      {/* <Login/> */}
     </div>
   );
 }
